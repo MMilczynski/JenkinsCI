@@ -28,3 +28,9 @@ class GenericStack:
             return self._items.pop(self._counter)
         else:
             return None
+
+    def reset(self):
+        """Resets current stack.
+        """
+        self._items = []
+        self._counter = 0
