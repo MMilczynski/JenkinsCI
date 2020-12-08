@@ -92,3 +92,11 @@ def test_empty_stack_with_content(stack_with_content):
     stack_with_content.pop()
 
     assert stack_with_content.pop() is None
+
+
+def test_stack_reset(stack_with_content):
+    """Tests reset operation on stack with content.
+    """
+    stack_with_content.reset()
+
+    assert stack_with_content.pop() is None
