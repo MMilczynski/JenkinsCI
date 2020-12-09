@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'pytest tests --cov-report=xml:coverate_results\coverage.xml --cov=lib'
+                sh 'pytest tests --cov-report=xml:coverate_results/coverage.xml --cov=lib'
             }
         }
     }
