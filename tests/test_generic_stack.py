@@ -1,4 +1,4 @@
-"""PyTests for GenericStack operations.
+"""Tests using pytest for GenericStack operations.
 """
 import numpy as np
 import pytest

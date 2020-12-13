@@ -2,35 +2,28 @@
 
 https://app.pluralsight.com/library/courses/test-driven-development-big-picture/table-of-contents
 """
+from lib.base_stack import BaseStack
 
 
-class GenericStack:
-    """Stack containing generic-type elements
-    """
+class GenericStack(BaseStack):
+    """Stack containing generic-type elements."""
 
-    def __init__(self):
-        """
-        """
-        self._items = []
-        self._counter = 0
-
-    def push(self, item):
+    def push(self, new_element):
         """Adds item to end of stack.
         """
-        self._items.append(item)
-        self._counter = len(self._items)
+        self._elements.append(new_element)
+        self._counter += 1
 
     def pop(self):
         """Removes last element from stack and returns it. Will return None otherwise
         """
         if self._counter > 0:
             self._counter -= 1
-            return self._items.pop(self._counter)
-        else:
-            return None
+            return self._elements.pop(self._counter)
+        return None
 
     def reset(self):
         """Resets current stack.
         """
-        self._items = []
+        self._elements = []
         self._counter = 0
