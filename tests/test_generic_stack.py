@@ -1,7 +1,6 @@
 """Tests using pytest for GenericStack operations.
 """
 import numpy as np
-import pytest
 
 from lib.generic_stack import GenericStack
 
