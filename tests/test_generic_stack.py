@@ -1,11 +1,11 @@
 """Tests using pytest for GenericStack operations.
 """
 import numpy as np
-
+import pytest
 from lib.generic_stack import GenericStack
 
 
-@pytest.fixture
+@pytest.fixture()
 def stack_init():
     """Create empty stack.
 
@@ -18,7 +18,7 @@ def stack_init():
     return GenericStack()
 
 
-@pytest.fixture
+@pytest.fixture()
 def stack_with_content():
     """Create stack, fill it with content and return it
 
