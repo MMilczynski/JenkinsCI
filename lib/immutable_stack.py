@@ -8,7 +8,7 @@ from lib.base_stack import BaseStack
 
 class ImmutableStack(BaseStack):
     """An immutable stack is not supposed to change its state. The push and pop 
-       methods should therefor return a new stack instance. Compared to the 
+       methods should therefore return a new stack instance. Compared to the 
        GenericStack the Immuatble Stack should have an additional peek method to
        return the top-most element.  
     """
